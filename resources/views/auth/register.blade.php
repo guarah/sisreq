@@ -5,7 +5,7 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     </head>
     <body id="login-body">
-        <section class="main">
+        <section class="main-login">
             <form  class="login-form" method="POST" action="/auth/register">
                 {!! csrf_field() !!}
 

@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>..:: SISREQ ::..</title>
-    <link href="../css/style.css" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+@extends('layout.mainLayout')
+@section('content')
 
     <style>
         html, body {
             height: 100%;
         }
 
-        body {
-            margin: 0;
+        .title, h2 {
+            margin: auto;
             padding: 0;
-            width: 100%;
-            display: table;
             font-weight: 100;
             font-family: 'Lato';
         }
@@ -35,15 +28,16 @@
             font-size: 96px;
         }
     </style>
-</head>
-<body>
-<div class="container">
-    <div class="content">
-        <div class="title">SISREQ</div>
-        <h2>HOME</h2>
-        <li><a href="{{ url('Requerimento') }}">Requerimentos</a></li>
+
+
+    <div class="container">
+        <div class="content">
+            <div class="title">SISREQ - HOME</div>
+            <h2>Sistema para gerenciamento de requerimentos</h2>
+        </div>
+
     </div>
 
-</div>
-</body>
-</html>
+
+@endsection
+

@@ -1,6 +1,6 @@
 @extends('layout.mainLayout')
 @section('content')
-    <h1>Requerimento</h1>
+    <h1 class="head-title">Requerimento</h1>
 
     <form class="form-horizontal">
         <div class="form-group">
@@ -13,12 +13,6 @@
             <label for="name" class="col-sm-2 control-label">Nome</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" id="name" placeholder={{$requerimento->nome}} readonly>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="address" class="col-sm-2 control-label">Aluno</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="adress" placeholder={{$requerimento->aluno}} readonly>
             </div>
         </div>
         <div class="form-group">

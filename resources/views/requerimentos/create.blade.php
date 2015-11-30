@@ -1,14 +1,10 @@
 @extends('layout.mainLayout')
 @section('content')
-    <h1>Novo Requerimento</h1>
+    <h1 class="head-title" >Novo Requerimento</h1>
     {!! Form::open(['url' => 'Requerimento']) !!}
     <div class="form-group">
         {!! Form::label('Nome', 'Nome:') !!}
         {!! Form::text('nome',null,['class'=>'form-control']) !!}
-    </div>
-    <div class="form-group">
-        {!! Form::label('Aluno', 'Aluno:') !!}
-        {!! Form::text('aluno',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
         {!! Form::label('Tipo', 'Tipo:') !!}

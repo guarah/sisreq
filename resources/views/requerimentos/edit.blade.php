@@ -1,14 +1,10 @@
 @extends('layout.mainLayout')
 @section('content')
-    <h1>Editar Requerimento</h1>
+    <h1 class="head-title">Editar Requerimento</h1>
     {!! Form::model($requerimento,['method' => 'PATCH','route'=>['Requerimento.update',$requerimento->id_requerimento]]) !!}
     <div class="form-group">
         {!! Form::label('Nome', 'Nome:') !!}
         {!! Form::text('nome',null,['class'=>'form-control']) !!}
-    </div>
-    <div class="form-group">
-        {!! Form::label('Aluno', 'Aluno:') !!}
-        {!! Form::text('aluno',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
         {!! Form::label('Tipo', 'Tipo:') !!}

@@ -15,4 +15,19 @@ Route::get('/home', function () {
     return view('home');
 });
 
+
+
+Route::get('Requerimento/ListarAprovados', 'RequerimentoController@listarAprovados');
+Route::get('Requerimento/ListarCancelados', 'RequerimentoController@listarCancelados');
+
+Route::get('Requerimento/Aprovar/{id}', [
+    'as' => 'Requerimento.Aprovar',
+    'uses' => 'RequerimentoController@aprovar'
+]);
+
+Route::get('Requerimento/Cancelar/{id}', [
+    'as' => 'Requerimento.Cancelar',
+    'uses' => 'RequerimentoController@cancelar'
+]);
+
 Route::resource('Requerimento','RequerimentoController');
